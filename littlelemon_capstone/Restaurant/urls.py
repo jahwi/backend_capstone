@@ -2,6 +2,7 @@ from django.urls import path, include
 from . import views
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken.views import obtain_auth_token
+# import djoser
 
 router = DefaultRouter()
 router.register(r'tables', views.BookingsViewSet)

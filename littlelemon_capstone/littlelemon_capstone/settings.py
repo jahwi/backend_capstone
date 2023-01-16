@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "Restaurant",
+    "djoser",
 ]
 
 MIDDLEWARE = [
@@ -148,7 +149,7 @@ REST_FRAMEWORK={
     "DEFAULT_AUTHENTICATION_CLASSES": [
         # "rest_framework_simplejwt.authentication.JWTAuthentication",
         "rest_framework.authentication.TokenAuthentication",
-        # "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
     ],
     # "DEFAULT_THROTTLE_RATES": {
     #     "anon": "2/min",
@@ -160,3 +161,5 @@ REST_FRAMEWORK={
     #     'rest_framework.throttling.UserRateThrottle'
     #     ],
 }
+
+DJOSER={"USER_ID_FIELD":"username"}

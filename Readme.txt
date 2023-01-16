@@ -7,3 +7,8 @@ Admin panel username: admin
 Admin panel password: admin
 
 Running tests: python manage.py test tests
+
+Remember to change the database credentials in the settings.py file.
+Remember to run pipenv install and pipenv shell before grading.
+
+Thanks.
